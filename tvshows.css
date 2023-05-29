@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+   
+}
+
+.container1{
+    display: flex;
+}
+
+header{
+    
+    background-color: black;
+}
+
+svg{
+    display: inline-block;
+    position: relative;
+    padding-left: 0%;
+    margin-top: 25.5%;
+    fill: white;
+    right: 1280.2;
+    height: 61px;
+    width: 95px;
+    right: 1346.2;
+}
+
+.navbar{
+    height: 12%;
+    margin-top:0%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+nav{
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li{
+    list-style: none;
+    display: contents;
+    margin-left:4%; 
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    border: 0;
+    border-radius: 50px;
+    outline:none;
+}
+
+ul{
+    margin-top: 2%;
+}
+
+a{
+    text-transform:none;
+    letter-spacing: 2px;
+    transition: 1s;
+
+}
+
+a:not(.icon-link):hover{
+    color: black;
+    background:whitesmoke;
+    box-shadow: 0 0 10px white, 0 0 40px white, 0 0 80 px white;
+    transition: 0.5s;
+}
+
+main{
+    width: 100%;
+    
+}
+
+#header-section{
+  font-size: 20px;
+  justify-content: left;
+  box-shadow: 5px 5px 15px black;
+}
+
+/* card code */
+
+img{
+    height:100%;
+    width:19%;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 48vh;
+    align-items: center;
+    box-shadow: 5px 5px 19px grey;
+}
+
+.container2{
+    flex-basis: 25%;
+    position: relative;
+}
+
+.container2:hover .intro {
+    /* transform: translateY(-3%); */
+    transition: 0.8s ease;
+    opacity: 1;
+  }
+
+.card{
+    height:35vh;
+    margin: 35px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+img{
+    height: 35vh;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.intro{
+    height: 178px;
+    width: 297px;
+    padding: 14px;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    background: rgb(27, 27, 27, 0.5);
+    color: white;
+    transform: translateY(-102%);
+    opacity:0;
+}
+
+ .card:hover{
+    cursor: pointer;
+ }
+
+ #header-section{
+    height: 15vh;
+ }
+
+/* footer css */
+
+
+ footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    flex: 0 0 calc(33.333% - 20px);
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+  .social-media li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .bottom-bar {
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  
+  /* slider */
+
+  #slider {
+	overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+  }
+  #slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 30s slider infinite;
+  } 
+  #slider figure img{
+	float: left;
+	width: 20%;
+
+    height: 100%;
+    object-fit: cover;
+  }
+
+    @keyframes slider {
+        0% {
+            left: 0;
+        }
+        20% {
+            left: 0;
+        }
+        25% {
+            left: -100%;
+        }
+        45% {
+            left: -100%;
+        }
+        50% {
+            left: -200%;
+        }
+        70% {
+            left: -200%;
+        }
+        75% {
+            left: -300%;
+        }
+        95% {
+            left: -300%;
+        }
+        100% {
+            left: -400%;
+        }
+    }
